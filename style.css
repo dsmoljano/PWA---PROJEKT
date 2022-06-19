@@ -1,0 +1,335 @@
+/*---------------------------------------------------------------------------HEADER-------------------------------------------------------------------------------------*/
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.logoSlika{
+    width: 200px;
+    padding: 10px 0px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px 0;
+    font-weight: bold;
+    background-color: gray;
+    box-shadow: inset 0 0 3px #000000;
+}
+.navigacija{
+    margin: 0 auto;
+    width: 60%;
+}
+nav ul{ 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    text-decoration: none;
+    height: auto;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{ 
+    text-decoration: none;
+    color: white;
+    padding: 0 20px 0 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+.pravokutnik{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 6px -10px gray;
+}
+/*---------------------------------------------------------------------------BODY-------------------------------------------------------------------------------------*/
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+.centriranje{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.kategorija{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+}
+h1{
+    margin: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    word-break: break-all;
+    white-space: normal;
+}
+.vijesti{
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    flex-direction: row;
+    background-color: white;
+    justify-content: left;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+.vijest{
+    position: relative;
+    width: 25%;
+    height: auto;
+    color: black;
+    text-align: center;
+    border-left: solid 1px lightgray;
+}
+.vijestClanak{
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: black;
+    text-align: center;
+}
+.PrvaVijest{
+    position: relative;
+    width: 25%;
+    height: auto;
+    color: black;
+    text-align: center;
+}
+.PrvaVijestKategorija{
+    position: relative;
+    width: 25%;
+    height: auto;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.slikaOkvir{
+    width: 85%;
+    height: 150px;
+    margin: 0 auto;
+}
+.slikaOkvirClanak{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.PrvaSlikaOkvir{
+    width: 85%;
+    height: 150px;
+    margin: 0 auto;
+}
+.slikaVijest{
+    width: 100%;
+    height: 85%;
+}
+.slikaAdmin{
+    width: 100%;
+    height: 450px
+}
+h2{
+    text-align: left;
+    margin: 0 auto;
+    width: 85%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: red;
+    margin-bottom: 10px;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.tekstVijest{
+    margin: 0 auto;
+    width: 85%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tekstVijestClanak{
+    margin: 0 auto;
+    width: 90%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+.publish{
+    color: gray;
+    font-size: 13px;
+    text-align: left;
+}
+.publishOkvir{
+    width: 90%;
+    margin: 0 auto;
+}
+.glavniTekstOkvir{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    border-bottom: solid 1px lightgray;
+}
+.glavniTekstPodnaslov{
+    font-size: 24px;
+    text-align: left;
+    padding-left: 18px;
+    margin-bottom: 30px;
+}
+.glavniTekst{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 18px;
+    margin-bottom: 30px;
+}
+footer{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+    
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: black;
+    width: 60%;
+    height: auto;
+    padding: 10px 0;
+}
+p{
+    margin: 5px 0;
+    word-break: break-all;
+    white-space: normal;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*---------------------------------------------------------------------------RESPONSIVE--------------------------------------------------------------------------------*/
+@media (max-width: 1000px) {
+    .vijesti{
+    flex-direction: column;
+    }
+    .vijest{
+        width: 100%;
+        height: auto;
+    }
+    .PrvaVijest{
+        width: 100%;
+        height: auto;
+    }
+    .slikaOkvir{
+        width: 85%;
+        height: 80%;
+        margin: 0 auto;
+        padding-top: 25px;
+        border-top: solid 1px lightgray;
+    }
+    .PrvaSlikaOkvir{
+        width: 85%;
+        height: 80%;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+    .slikaVijest{
+        width: 100%;
+        height: 95%;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul li{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .kategorija{
+        width: 90%;
+    }
+    }
+/*---------------------------------------------------------------------------FORMA--------------------------------------------------------------------------------*/
+form{
+    width: 90%;
+    margin: 0 auto;
+}
+form label{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: inline-block;
+    margin: 20px 0;
+}
+.naslov{
+    width: 100%;
+    font-size: 30px;
+}
+.sazetak{
+    width: 100%;
+    font-size: 30px;
+    height: 115px;
+}
+.sadrzaj{
+    width: 100%;
+    font-size: 30px;
+    height: 230px;
+}
+select{
+    font-size: 25px;
+    padding: 0px 15px;
+    margin-left: 50px;
+}
+.naslovnaSlika{
+    font-size: 18px;
+    margin-left: 20px;
+}
+.checkbox{
+    width: 18px;
+    height: 18px;
+    margin-left: 40px;
+}
+.prikazCBox{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    margin: 20px 0;
+}
+.submit{
+    font-size: 25px;
+    padding: 10px 50px;
+}
+.reset{
+    font-size: 25px;
+    padding: 10px 50px;
+}
+.submit_reset{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
